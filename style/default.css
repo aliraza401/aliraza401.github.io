@@ -6,6 +6,7 @@
 
   --mainColor: #eaeaea;
   --secColor: #fff;
+  --inputBtn: #666;
 }
 
 h1,
@@ -67,6 +68,7 @@ p {
   border: 1px solid var(--borderColor);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  background-color: var(--secColor);
 }
 
 .my-nav {
@@ -91,7 +93,7 @@ p {
 
 .my-row-about {
   height: 500px;
-  background-color: white;
+  background-color: var(--secColor);
 }
 
 .theme-dot {
@@ -115,6 +117,7 @@ p {
   border: none;
   transition: transform 250ms ease-in;
   cursor: pointer;
+  border: 1px solid gray;
   opacity: 1;
 }
 
@@ -171,9 +174,12 @@ h4 a{
   padding: 10px;
 }
 
+
+
 .mini-card:hover {
   filter: grayscale(0);
   transition: ease-in 250ms;
+
 }
 
 .mini-card:after {
@@ -208,4 +214,18 @@ h4 a{
   border-radius: 5px;
   margin-left: 15%;
   margin-right: 15%;
+}
+
+.input-field{
+  background-color: var(--mainColor) !important;
+  color: white;
+}
+
+textarea{
+  background-color: var(--mainColor) !important;
+}
+
+
+.input-btn{
+  background-color: var(--inputBtn) !important;
 }
