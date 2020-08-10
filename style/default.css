@@ -64,8 +64,8 @@ p, h5, h6, span, label {
   background-color: #fec02f;
 }
 
-.d-green {
-  background-color: #606b56;
+.d-green-sm {
+  background-color: green;
 }
 
 .about_style {
@@ -129,21 +129,11 @@ p, h5, h6, span, label {
   background-color: white;
 }
 
-.d-black {
-  background-color: black;
-}
 
 .d-green {
-  background-color: green;
+  background-color: #4e5e48;
 }
 
-.d-green {
-  background-color: green;
-}
-
-.d-purpole {
-  background-color: purple;
-}
 
 .text-sm {
   font-size: 9px;
