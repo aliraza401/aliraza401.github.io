@@ -168,7 +168,7 @@ h4 a {
   background-color: var(--secColor);
   border-radius: 5px;
   cursor: pointer;
-  filter: grayscale(90%);
+  filter: grayscale(70%);
 }
 
 .mini-card img {
