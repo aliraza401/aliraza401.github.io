@@ -26,7 +26,11 @@ ul {
   list-style: none;
 }
 
-p {
+p, h5, h6, span {
+  color: var(--mainText) !important;
+}
+
+.my_para{
   font-family: "Roboto Mono", monospace;
 }
 
@@ -223,4 +227,10 @@ textarea {
 
 .input-btn {
   background-color: var(--inputBtn) !important;
+}
+
+@media (max-width: 500px) {
+  .my-card {
+    display: none;
+  }
 }
