@@ -61,7 +61,7 @@ p {
 }
 
 .d-green {
-  background-color: #2aca3e;
+  background-color: #606b56;
 }
 
 .about_style {
@@ -145,9 +145,8 @@ p {
   font-size: 9px;
 }
 
-h4 a{
+h4 a {
   text-decoration: none;
-
 }
 
 .my-card {
@@ -174,12 +173,9 @@ h4 a{
   padding: 10px;
 }
 
-
-
 .mini-card:hover {
   filter: grayscale(0);
   transition: ease-in 250ms;
-
 }
 
 .mini-card:after {
@@ -198,34 +194,33 @@ h4 a{
   transform-origin: 0% 50%;
 }
 
-.media{
+.media {
   background-color: var(--mainColor);
   border-radius: 5px;
 }
 
-.my-date{
+.my-date {
   float: right;
   font-size: 10px;
   margin-top: 5px;
 }
 
-.form-div{
+.form-div {
   background-color: var(--secColor);
   border-radius: 5px;
   margin-left: 15%;
   margin-right: 15%;
 }
 
-.input-field{
+.input-field {
   background-color: var(--mainColor) !important;
   color: white;
 }
 
-textarea{
+textarea {
   background-color: var(--mainColor) !important;
 }
 
-
-.input-btn{
+.input-btn {
   background-color: var(--inputBtn) !important;
 }
