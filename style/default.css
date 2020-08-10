@@ -229,8 +229,10 @@ textarea {
   background-color: var(--inputBtn) !important;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .my-card {
-    display: none;
+    box-shadow: none;
+    border-radius: 5px;
   }
+
 }
