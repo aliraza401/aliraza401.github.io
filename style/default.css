@@ -70,6 +70,7 @@ p, h5, h6, span, label {
 
 .about_style {
   border: 1px solid var(--borderColor);
+  border-bottom: 0px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   background-color: var(--secColor);
@@ -96,7 +97,7 @@ p, h5, h6, span, label {
 }
 
 .my-row-about {
-  height: 450px;
+  height: 500px;
   background-color: var(--secColor);
 }
 
