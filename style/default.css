@@ -148,6 +148,7 @@ h4 a {
   background-color: var(--mainColor);
   border: 2px solid gray;
   padding: 15px;
+  border-radius: 4px;
 
   -webkit-box-shadow: 26px -20px 10px -3px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: 26px -20px 10px -3px rgba(0, 0, 0, 0.51);
