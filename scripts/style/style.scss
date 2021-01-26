@@ -1,0 +1,40 @@
+$primary-color-dark:   #455A64;
+$primary-color:        #607D8B;
+$primary-color-light:  #CFD8DC;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #9E9E9E;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: $primary-color-light;
+}
+
+.fw-600{
+  font-weight: 600;
+}
+
+.banner{
+  background-color: $primary-color-dark;
+  height: 200px;
+  color: #CFD8DC;
+}
+
+
+
+.toolbar {
+  button {
+    font-size: 20px !important;
+    background-color: white !important;
+    border: 2px solid white !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+}
+@media (max-width: 767.98px) {
+}
+@media (max-width: 991.98px) {
+}
