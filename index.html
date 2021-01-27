@@ -3,7 +3,7 @@
     {
       info: `1. Basic Structure`,
       code: `
-&lt;!DOCTYPE html&gt;
+&lt;!DOCTYPE html&gt;  
 &lt;html lang="en"&gt;
   &lt;head&gt;
       &lt;meta charset="UTF-8"&gt;
@@ -54,22 +54,6 @@ No audio support.
 &lt;/audio&gt;&lt;/p&gt;`,
     },
   ];
-  const buildTable = (data) => {
-    var table = document.getElementById("myTable");
-    table.innerHTML = "";
-    for (var i = 0; i < data.length; i++) {
-      var info = `${data[i].info}`;
-      var code = `${data[i].code}`;
-
-      let row = `<p class="lead fw-600 mt-5">${info} </p>
-            <pre class="language-html">
-                <code>
-                    ${code}
-                </code>
-            </pre>`;
-      table.innerHTML += row;
-    }
-  };
 </script>
 
 <!DOCTYPE html>
@@ -166,6 +150,23 @@ No audio support.
     </div>
 
     <script>
+      const buildTable = (data) => {
+        var table = document.getElementById("myTable");
+        table.innerHTML = "";
+        for (var i = 0; i < data.length; i++) {
+          var info = `${data[i].info}`; 
+          var code = `${data[i].code}`;
+
+          let row = `<p class="lead fw-600 mt-5">${info} </p>
+            <pre class="language-html">
+                <code>
+                    ${code}
+                </code>
+            </pre>`;
+          table.innerHTML += row;
+        }
+        Prism.highlightAll();
+      };
       $("#search-input").on("keyup", (e) => {
         const value = e.target.value;
         let data = searchtable(value, myArray);
