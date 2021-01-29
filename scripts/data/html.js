@@ -8,7 +8,7 @@ let myArray = [
       &lt;meta charset="UTF-8"&gt;
       &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
       &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
+  &lt;/head&gt; 
   &lt;body&gt;
 
   &lt;/body&gt;
@@ -22,7 +22,7 @@ let myArray = [
   {
     info: `3. a Tag`,
     code: `
-&lt;a&gt; href="mailto:me@ruwix.com?Subject=Hi%20mate" target="_top"&gt;Send Mail&lt;/a&gt;`,
+&lt;a href="mailto:me@ruwix.com?Subject=Hi%20mate" target="_blank"&gt;Send Mail&lt;/a&gt;`,
   },
   {
     info: `4. iframe`,

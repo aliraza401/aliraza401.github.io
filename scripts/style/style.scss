@@ -1,28 +1,44 @@
-$primary-color-dark:   #455A64;
-$primary-color:        #607D8B;
-$primary-color-light:  #CFD8DC;
-$primary-color-text:   #FFFFFF;
-$accent-color:         #9E9E9E;
-$primary-text-color:   #212121;
+$primary-color-dark: #455a64;
+$primary-color: #607d8b;
+$primary-color-light: #cfd8dc;
+$primary-color-text: #ffffff;
+$accent-color: #9e9e9e;
+$primary-text-color: #212121;
 $secondary-text-color: #757575;
-$divider-color:        #BDBDBD;
+$divider-color: #bdbdbd;
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: $primary-color-light;
+  font-size: 15px !important;
 }
 
-.fw-600{
+.search {
+  position: relative;
+
+  input {
+    width: 50%;
+    margin: auto;
+  }
+  .img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 71%;
+    top: 5px;
+    opacity: 0.7;
+  }
+}
+
+.fw-600 {
   font-weight: 600;
 }
 
-.banner{
+.banner {
   background-color: $primary-color-dark;
   height: 200px;
-  color: #CFD8DC;
+  color: #cfd8dc;
 }
-
-
 
 .toolbar {
   button {
@@ -33,6 +49,12 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .search {
+    input {
+      width: 90%;
+      margin: auto;
+    }
+  }
 }
 @media (max-width: 767.98px) {
 }
