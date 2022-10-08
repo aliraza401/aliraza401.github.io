@@ -13,43 +13,50 @@ const data = {
   project_fininhed: "15+",
   stackoverflow_rating: "750+",
 
+  // Social Links
+  link_linkedin: "https://www.linkedin.com/in/ali-raza-4a3284164/",
+  link_stackoverflow: "https://stackoverflow.com/users/10115166/ali-raza",
+  link_github: "https://github.com/aliraza401",
+  link_instagram: "https://www.instagram.com/i_am_razaaa/",
+  link_twitter: "https://twitter.com/AliRaza00626002",
+
   // Projects
   projects: [
     {
       type: "Website",
       name: "Dialboxx",
       link: "https://www.dialboxx.pk/",
-      img: "https://res.cloudinary.com/markloops/image/upload/v1665217429/cixqkgjlxhlirdqxafqk.png",
+      img: "https://res.cloudinary.com/markloops/image/upload/v1665224706/qjlwbgsox7nmq5yohyex.png",
     },
     {
       type: "Website",
       name: "Food Cart",
       link: "https://foodcartsmanufacturing.com/",
-      img: "https://res.cloudinary.com/markloops/image/upload/v1665216200/niv3dgby9fbxgajs4lga.png",
+      img: "https://res.cloudinary.com/markloops/image/upload/v1665224728/phzmzmptazqirzl3zeq7.jpg",
     },
     {
       type: "Website",
       name: "Zip Homes",
       link: "https://zip.homes/",
-      img: "https://res.cloudinary.com/markloops/image/upload/v1665216405/kincmk1pyd8fevgv0uvu.png",
+      img: "https://res.cloudinary.com/markloops/image/upload/v1665224708/mtyor6icmnbzjzwd3c1v.png",
     },
     {
       type: "Website",
       name: "Vulcaz",
       link: "https://getvulcaz.com/",
-      img: "https://res.cloudinary.com/markloops/image/upload/v1665216680/xdwabib9xab8yux0lkuj.png",
+      img: "https://res.cloudinary.com/markloops/image/upload/v1665224708/svgnchgtma0aarwxi9ln.png",
     },
     {
       type: "Website",
       name: "Son Of Leon",
       link: "https://sonofleon.com/",
-      img: "https://res.cloudinary.com/markloops/image/upload/v1665217098/jql53axts5qgbbumkh10.png",
+      img: "https://res.cloudinary.com/markloops/image/upload/v1665224728/cnt7fek7ntxuptcebzlx.jpg",
     },
     {
       type: "Website",
       name: "Bunnye",
       link: "https://bunnye.com/",
-      img: "https://res.cloudinary.com/markloops/image/upload/v1665217271/vx56ydlss0x2ta6lfhin.png",
+      img: "https://res.cloudinary.com/markloops/image/upload/v1665224706/klnnuekepx4sgqbyb4iw.png",
     },
   ],
 
@@ -59,7 +66,7 @@ const data = {
   img_banner:
     "https://res.cloudinary.com/markloops/image/upload/v1665213652/aw1pk2gx1a8cyt0r0ign.jpg",
   img_background:
-    "https://res.cloudinary.com/markloops/image/upload/v1665213803/boig4akdkupjw6p7xf48.png",
+    "https://res.cloudinary.com/markloops/image/upload/v1665224160/ge1s68dhee1jposn4e84.png",
   img_projects:
     "https://res.cloudinary.com/markloops/image/upload/v1665215100/wuazovoqmtm7ok476jat.jpg",
   img_contact:

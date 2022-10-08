@@ -11,18 +11,18 @@ https://templatemo.com/tm-578-first-portfolio
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
-  --primary-color: #939F5C;
-  --secondary-color: #BBCE8A;
+  --primary-color: #939f5c;
+  --secondary-color: #bbce8a;
   --section-bg-color: #f9f9f9;
   --dark-color: #000000;
   --p-color: #717275;
   --border-color: #e9eaeb;
   --featured-border-color: #727aab;
 
-  --body-font-family: "DM Sans", sans-serif;
+  --body-font-family: "DM Sans";
 
   --h1-font-size: 62px;
-  --h2-font-size: 48px;
+  --h2-font-size: 40px;
   --h3-font-size: 36px;
   --h4-font-size: 32px;
   --h5-font-size: 24px;
@@ -488,7 +488,7 @@ strong {
 }
 
 .hero-title {
-  font-size: 44px;
+  font-size: 40px;
 }
 
 .hero h2 {
@@ -519,8 +519,9 @@ strong {
   position: absolute;
   z-index: 22;
   top: 0;
-  width: 100%;
-  min-width: 550px;
+  left: 25%;
+  width: 300px;
+  max-width: 300px;
 }
 
 .hero svg {
@@ -744,7 +745,7 @@ strong {
   transition: all ease 0.5s;
   max-height: 300px;
   width: auto;
-  margin: auto;  
+  margin: auto;
 }
 
 .projects-title {
@@ -961,6 +962,9 @@ strong {
   height: 40px;
   line-height: 40px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-icon-link:hover {
@@ -985,7 +989,7 @@ strong {
   }
 
   .hero-image {
-    min-width: 650px;
+    /* min-width: 650px; */
   }
 
   .hero-title,
@@ -1173,4 +1177,8 @@ strong {
   .hero-image {
     min-width: inherit;
   }
+}
+
+* {
+  /* font-size: 101% !important; */
 }

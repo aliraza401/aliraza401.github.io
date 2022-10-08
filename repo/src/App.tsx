@@ -1,8 +1,4 @@
-import React from "react";
-import { isTemplateExpression } from "typescript/lib/tsserverlibrary";
-
 import "./assets/css/bootstrap-icons.css";
-
 import info from "./_mocks/data";
 
 function App() {
@@ -14,11 +10,10 @@ function App() {
         <MyStory />
         <SectionInforamtion />
         <Stack />
-        {/* <Services /> */}
         <Projects />
         <Contact />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
@@ -61,11 +56,6 @@ const NavBar = () => {
               <li className="nav-item">
                 <a className="nav-link click-scroll" href="#section_2">
                   About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link click-scroll" href="#section_3">
-                  Services
                 </a>
               </li>
               <li className="nav-item">
@@ -112,7 +102,11 @@ const Banner = () => {
               </div>
               <h2 className="mb-4">{info.short_bio}</h2>
               <p className="mb-4">
-                <a className="custom-btn btn custom-link" href="#section_2">
+                <a
+                  className="custom-btn btn custom-link"
+                  target={"_blank"}
+                  href={info.link_linkedin}
+                >
                   Let's Connect
                 </a>
               </p>
@@ -260,114 +254,6 @@ const Stack = () => {
   );
 };
 
-const Services = () => {
-  return (
-    <section className="services section-padding" id="section_3">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-10 col-12 mx-auto">
-            <div className="section-title-wrap d-flex justify-content-center align-items-center mb-5">
-              <img
-                src="images/handshake-man-woman-after-signing-business-contract-closeup.jpg"
-                className="avatar-image img-fluid"
-                alt=""
-              />
-              <h2 className="text-white ms-4 mb-0">Services</h2>
-            </div>
-            <div className="row pt-lg-5">
-              <div className="col-lg-6 col-12">
-                <div className="services-thumb">
-                  <div className="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                    <h3 className="mb-0">Websites</h3>
-                    <div className="services-price-wrap ms-auto">
-                      <p className="services-price-text mb-0">$2,400</p>
-                      <div className="services-price-overlay" />
-                    </div>
-                  </div>
-                  <p>
-                    You may want to explore Too CSS for great collection of free
-                    HTML CSS templates.
-                  </p>
-                  <a href="#" className="custom-btn custom-border-btn btn mt-3">
-                    Discover More
-                  </a>
-                  <div className="services-icon-wrap d-flex justify-content-center align-items-center">
-                    <i className="services-icon bi-globe" />
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 col-12">
-                <div className="services-thumb services-thumb-up">
-                  <div className="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                    <h3 className="mb-0">Branding</h3>
-                    <div className="services-price-wrap ms-auto">
-                      <p className="services-price-text mb-0">$1,200</p>
-                      <div className="services-price-overlay" />
-                    </div>
-                  </div>
-                  <p>
-                    You can explore more CSS templates on TemplateMo website by
-                    browsing through different tags.
-                  </p>
-                  <a href="#" className="custom-btn custom-border-btn btn mt-3">
-                    Discover More
-                  </a>
-                  <div className="services-icon-wrap d-flex justify-content-center align-items-center">
-                    <i className="services-icon bi-lightbulb" />
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 col-12">
-                <div className="services-thumb">
-                  <div className="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                    <h3 className="mb-0">Ecommerce</h3>
-                    <div className="services-price-wrap ms-auto">
-                      <p className="services-price-text mb-0">$3,600</p>
-                      <div className="services-price-overlay" />
-                    </div>
-                  </div>
-                  <p>
-                    If you need a customized ecommerce website for your
-                    business, feel free to discuss with me.
-                  </p>
-                  <a href="#" className="custom-btn custom-border-btn btn mt-3">
-                    Discover More
-                  </a>
-                  <div className="services-icon-wrap d-flex justify-content-center align-items-center">
-                    <i className="services-icon bi-phone" />
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 col-12">
-                <div className="services-thumb services-thumb-up">
-                  <div className="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                    <h3 className="mb-0">SEO</h3>
-                    <div className="services-price-wrap ms-auto">
-                      <p className="services-price-text mb-0">$1,450</p>
-                      <div className="services-price-overlay" />
-                    </div>
-                  </div>
-                  <p>
-                    To list your website first on any search engine, we will
-                    work together. First Portfolio is one-page CSS Template for
-                    free download.
-                  </p>
-                  <a href="#" className="custom-btn custom-border-btn btn mt-3">
-                    Discover More
-                  </a>
-                  <div className="services-icon-wrap d-flex justify-content-center align-items-center">
-                    <i className="services-icon bi-google" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
 const Projects = () => {
   return (
     <section className="projects section-padding" id="section_4">
@@ -392,7 +278,7 @@ const Projects = () => {
                   <small className="projects-tag">{project.type}</small>
                   <h3 className="projects-title">{project.name}</h3>
                 </div>
-                <a href={project.link} target="_blanck" className="popup-image">
+                <a href={project.link} target="_blank" className="popup-image">
                   <img
                     src={project.img}
                     className="projects-image img-fluid"
@@ -424,31 +310,14 @@ const Contact = () => {
             </div>
           </div>
           <div className="clearfix" />
-          <div className="col-lg-3 col-md-6 col-12 pe-lg-0">
+          <div className="col-lg-6 col-md-6 col-12 pe-lg-0">
             <div className="contact-info contact-info-border-start d-flex flex-column">
               <strong className="site-footer-title d-block mb-3">
                 Services
               </strong>
               <ul className="footer-menu">
                 <li className="footer-menu-item">
-                  <a href="#" className="footer-menu-link">
-                    Websites
-                  </a>
-                </li>
-                <li className="footer-menu-item">
-                  <a href="#" className="footer-menu-link">
-                    Branding
-                  </a>
-                </li>
-                <li className="footer-menu-item">
-                  <a href="#" className="footer-menu-link">
-                    Ecommerce
-                  </a>
-                </li>
-                <li className="footer-menu-item">
-                  <a href="#" className="footer-menu-link">
-                    SEO
-                  </a>
+                  <span className="footer-menu-link">Websites</span>
                 </li>
               </ul>
               <strong className="site-footer-title d-block mt-4 mb-3">
@@ -457,178 +326,63 @@ const Contact = () => {
               <ul className="social-icon">
                 <li className="social-icon-item">
                   <a
-                    href="https://twitter.com/minthu"
-                    className="social-icon-link bi-twitter"
+                    href={info.link_github}
+                    target="_blank"
+                    className="social-icon-link bi-github"
                   />
                 </li>
                 <li className="social-icon-item">
-                  <a href="#" className="social-icon-link bi-instagram" />
-                </li>
-                <li className="social-icon-item">
-                  <a href="#" className="social-icon-link bi-pinterest" />
+                  <a
+                    href={info.link_stackoverflow}
+                    className="social-icon-link bi-stack-overflow"
+                    target="_blank"
+                  />
                 </li>
                 <li className="social-icon-item">
                   <a
-                    href="https://www.youtube.com/templatemo"
-                    className="social-icon-link bi-youtube"
+                    href={info.link_linkedin}
+                    className="social-icon-link bi-linkedin"
+                    target="_blank"
+                  />
+                </li>
+                <li className="social-icon-item">
+                  <a
+                    href={info.link_instagram}
+                    className="social-icon-link bi-instagram"
+                    target="_blank"
+                  />
+                </li>
+                <li className="social-icon-item">
+                  <a
+                    href={info.link_twitter}
+                    className="social-icon-link bi-twitter"
+                    target="_blank"
                   />
                 </li>
               </ul>
               <strong className="site-footer-title d-block mt-4 mb-3">
-                Start a project
+                Who am i
               </strong>
-              <p className="mb-0">I’m available for freelance projects</p>
+              <p className="mb-0">{info.short_bio}</p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 col-12 ps-lg-0">
+          <div className="col-lg-6 col-md-6 col-12 ps-lg-0">
             <div className="contact-info d-flex flex-column">
               <strong className="site-footer-title d-block mb-3">About</strong>
-              <p className="mb-2">
-                Joshua is a professional web developer. Feel free to get in
-                touch with me.
-              </p>
+              <p className="mb-2">{info.bio}</p>
               <strong className="site-footer-title d-block mt-4 mb-3">
                 Email
               </strong>
               <p>
-                <a href="mailto:hello@josh.design">hello@josh.design</a>
+                <a href={`mailto:${info.email}`}>{info.email}</a>
               </p>
               <strong className="site-footer-title d-block mt-4 mb-3">
                 Call
               </strong>
               <p className="mb-0">
-                <a href="tel: 120-240-9600">120-240-9600</a>
+                <a href={`tel:${info.phone}`}>{info.phone}</a>
               </p>
             </div>
-          </div>
-          <div className="col-lg-6 col-12 mt-5 mt-lg-0">
-            <form
-              action="#"
-              method="get"
-              className="custom-form contact-form"
-              role="form"
-            >
-              <div className="row">
-                <div className="col-lg-6 col-md-6 col-12">
-                  <div className="form-floating">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      className="form-control"
-                      placeholder="Name"
-                      required
-                    />
-                    <label htmlFor="floatingInput">Name</label>
-                  </div>
-                </div>
-                <div className="col-lg-6 col-md-6 col-12">
-                  <div className="form-floating">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      pattern="[^ @]*@[^ @]*"
-                      className="form-control"
-                      placeholder="Email address"
-                      required
-                    />
-                    <label htmlFor="floatingInput">Email address</label>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-6">
-                  <div className="form-check form-check-inline">
-                    <input
-                      name="website"
-                      type="checkbox"
-                      className="form-check-input"
-                      id="inlineCheckbox1"
-                      defaultValue={1}
-                    />
-                    <label
-                      className="form-check-label"
-                      htmlFor="inlineCheckbox1"
-                    >
-                      <i className="bi-globe form-check-icon" />
-                      <span className="form-check-label-text">Websites</span>
-                    </label>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-6">
-                  <div className="form-check form-check-inline">
-                    <input
-                      name="branding"
-                      type="checkbox"
-                      className="form-check-input"
-                      id="inlineCheckbox2"
-                      defaultValue={1}
-                    />
-                    <label
-                      className="form-check-label"
-                      htmlFor="inlineCheckbox2"
-                    >
-                      <i className="bi-lightbulb form-check-icon" />
-                      <span className="form-check-label-text">Branding</span>
-                    </label>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-6">
-                  <div className="form-check form-check-inline">
-                    <input
-                      name="ecommerce"
-                      type="checkbox"
-                      className="form-check-input"
-                      id="inlineCheckbox3"
-                      defaultValue={1}
-                    />
-                    <label
-                      className="form-check-label"
-                      htmlFor="inlineCheckbox3"
-                    >
-                      <i className="bi-phone form-check-icon" />
-                      <span className="form-check-label-text">Ecommerce</span>
-                    </label>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-6">
-                  <div className="form-check form-check-inline me-0">
-                    <input
-                      name="seo"
-                      type="checkbox"
-                      className="form-check-input"
-                      id="inlineCheckbox4"
-                      defaultValue={1}
-                    />
-                    <label
-                      className="form-check-label"
-                      htmlFor="inlineCheckbox4"
-                    >
-                      <i className="bi-google form-check-icon" />
-                      <span className="form-check-label-text">SEO</span>
-                    </label>
-                  </div>
-                </div>
-                <div className="col-lg-12 col-12">
-                  <div className="form-floating">
-                    <textarea
-                      className="form-control"
-                      id="message"
-                      name="message"
-                      placeholder="Tell me about the project"
-                      defaultValue={""}
-                    />
-                    <label htmlFor="floatingTextarea">
-                      Tell me about the project
-                    </label>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-12 ms-auto">
-                  <button type="submit" className="form-control">
-                    Send
-                  </button>
-                </div>
-              </div>
-            </form>
           </div>
         </div>
       </div>
@@ -644,18 +398,7 @@ const Footer = () => {
           <div className="col-lg-12 col-12">
             <div className="copyright-text-wrap">
               <p className="mb-0">
-                <span className="copyright-text">
-                  Copyright © 2036 <a href="#">First Portfolio</a> Company. All
-                  rights reserved.
-                </span>
-                Design:
-                <a
-                  rel="sponsored"
-                  href="https://templatemo.com"
-                  target="_blank"
-                >
-                  TemplateMo
-                </a>
+                <span className="copyright-text">Coding is Potery.</span>
               </p>
             </div>
           </div>
