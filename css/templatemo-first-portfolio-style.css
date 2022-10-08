@@ -581,7 +581,7 @@ strong {
   FEATURED              
 -----------------------------------------*/
 .featured-numbers {
-  font-size: var(--h1-font-size);
+  font-size: var(--h2-font-size);
   line-height: normal;
   display: block;
 }
@@ -743,12 +743,13 @@ strong {
   display: block;
   transform: rotate(10deg) translateY(80px);
   transition: all ease 0.5s;
-  max-height: 300px;
+  max-height: 250px;
   width: auto;
   margin: auto;
 }
 
 .projects-title {
+  font-size: 28px;
   margin-bottom: 20px;
 }
 

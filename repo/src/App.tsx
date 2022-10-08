@@ -98,7 +98,7 @@ const Banner = () => {
                   className="avatar-image avatar-image-large img-fluid"
                   alt=""
                 />
-                <h1 className="hero-title ms-3 mb-0">Hola Friends!</h1>
+                <h1 className="hero-title ms-3 mb-0">{info.hello}</h1>
               </div>
               <h2 className="mb-4">{info.short_bio}</h2>
               <p className="mb-4">
